@@ -4,16 +4,16 @@ This program simulates a tutoring system using POSIX threads, semaphores, and mu
 
 **Features**
 
-    Prioritized student queue (by help count, then arrival time)
-    Synchronization with semaphores and mutexes
-    Dynamic tutor-student allocation
-    Real-time simulation with logging
+1) Prioritized student queue (by help count, then arrival time)
+2) Synchronization with semaphores and mutexes
+3) Dynamic tutor-student allocation
+4) Real-time simulation with logging
 
 **Threads**
 
-    Students: Request tutoring sessions multiple times.
-    Tutors: Provide help to students.
-    Coordinator: Manages priority queue and assigns students to tutors.
+1) Students: Request tutoring sessions multiple times.
+2) Tutors: Provide help to students.
+3) Coordinator: Manages priority queue and assigns students to tutors.
 
  **Input Arguments**
  
@@ -33,14 +33,14 @@ This program simulates a tutoring system using POSIX threads, semaphores, and mu
 
 **Workflow Summary**
 
-    Student checks for empty chair → sits → waits for tutor.
-    Coordinator enqueues student by priority.
-    Tutor dequeues student → provides help → signals student.
-    Repeat until all student gets help.
+1) Student checks for empty chair → sits → waits for tutor.
+2) Coordinator enqueues student by priority.
+3) Tutor dequeues student → provides help → signals student.
+4) Repeat until all student gets help.
 
 **Cleanup**
 
-    All threads are joined and dynamically allocated memory is freed before exiting.
+All threads are joined and dynamically allocated memory is freed before exiting.
 
 
 
