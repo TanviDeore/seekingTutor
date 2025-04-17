@@ -36,7 +36,7 @@ This program simulates a tutoring system using POSIX threads, semaphores, and mu
     Student checks for empty chair → sits → waits for tutor.
     Coordinator enqueues student by priority.
     Tutor dequeues student → provides help → signals student.
-    Repeat until student gets all help.
+    Repeat until all student gets help.
 
 **Cleanup**
 
