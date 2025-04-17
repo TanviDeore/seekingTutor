@@ -1,4 +1,4 @@
-**Multi-Threaded Tutoring Simulation**
+# **Multi-Threaded Tutoring Simulation**
 
 This program simulates a tutoring system using POSIX threads, semaphores, and mutexes. Multiple student threads request help from tutor threads, coordinated through a central coordinator thread. A priority queue handles student scheduling based on help count and arrival time.
 
@@ -25,7 +25,7 @@ This program simulates a tutoring system using POSIX threads, semaphores, and mu
 
 **Compilation**
 
-gcc -pthread -o csmc csmc.c
+    gcc -pthread -o csmc csmc.c
 
 **Output Example**
 
@@ -39,7 +39,8 @@ gcc -pthread -o csmc csmc.c
     Repeat until student gets all help.
 
 **Cleanup**
-All threads are joined and dynamically allocated memory is freed before exiting.
+
+    All threads are joined and dynamically allocated memory is freed before exiting.
 
 
 
